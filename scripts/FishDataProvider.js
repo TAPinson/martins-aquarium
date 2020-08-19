@@ -134,8 +134,8 @@ const fishCollection = [
         },
     ]
 
-
-// This is new code. Add this.
+// export a function that will return a copy of the priginal array
+// this uses the slice method to make the copy
 export const useFish = () => {
     return fishCollection.slice()
 }
