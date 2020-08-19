@@ -1,8 +1,4 @@
-/**
- *  FishList which renders individual fish objects as HTML
- */
-
-// TODO: Import `useFish` from the data provider module
+/** FishList which renders individual fish objects as HTML */
 
 import { useFish } from './FishDataProvider.js'
 import { Fish } from './Fish.js';
