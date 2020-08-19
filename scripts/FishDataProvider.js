@@ -1,26 +1,25 @@
-const fishCollection = {
-    [
-        {
-            givenName: "Buford",
-            species: "Male Beta",
-            length: "3 inches",
-            diet: "Cheetos",
-            harvestLocation: "Tibet"
-        },
-        {
-            givenName: "Orange Pants",
-            species: "Orange Fish",
-            length: "72 inches",
-            diet: "Cheetos",
-            harvestLocation: "Harvest Location: Jimmys Fish & Air Baloon Emporium"
-        },
-        {
-            givenName: "Pinky",
-            species: "unknown",
-            length: "4.2 inches",
-            diet: "Fish Kibble",
-            harvestLocation: "Harvest Location: Jimmys Fish & Air Baloon Emporium"
-        },
+const fishCollection = [
+    {
+        givenName: "Buford",
+        species: "Male Beta",
+        length: "3 inches",
+        diet: "Cheetos",
+        harvestLocation: "Tibet"
+    },
+    {
+        givenName: "Orange Pants",
+        species: "Orange Fish",
+        length: "72 inches",
+        diet: "Cheetos",
+        harvestLocation: "Harvest Location: Jimmys Fish & Air Baloon Emporium"
+    },
+    {
+        givenName: "Pinky",
+        species: "unknown",
+        length: "4.2 inches",
+        diet: "Fish Kibble",
+        harvestLocation: "Harvest Location: Jimmys Fish & Air Baloon Emporium"
+    },
         {
             givenName: "Bo",
             species: "Siberian Rainbow Fish",
@@ -134,7 +133,7 @@ const fishCollection = {
             harvestLocation: "Pond outside of Billys house"
         },
     ]
-}
+
 
 // This is new code. Add this.
 export const useFish = () => {
