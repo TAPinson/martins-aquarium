@@ -1,17 +1,27 @@
 /** FishList which renders individual fish objects as HTML */
+import { useFish, makeMostHolyFish, makeSoldierFish, makeUnworthy } from './FishDataProvider.js'
 
-import { useFish } from './FishDataProvider.js'
 import { Fish } from './Fish.js';
 
 export const FishList = () => {
+    const holyFish = makeMostHolyFish();
+    addFishToDom(holyFish);
 
-    // Get a reference to the `<article class="content">` element
+    const soldiers = makeSoldierFish();
+    addFishToDom(soldiers);
+
+    const unworthy = makeUnworthy();
+    addFishToDom(unworthy);
+    
+
+   
+}
+
+const addFishToDom = (whichFishArray) => {
     const contentElement = document.querySelector(".fishList");
-    const fishes = useFish();
-
     let fishHTMLRepresentation = "";
 
-    for (const fish of fishes) {
+    for (const fish of whichFishArray) {
         fishHTMLRepresentation += Fish(fish);
     }
 
@@ -19,4 +29,5 @@ export const FishList = () => {
     contentElement.innerHTML += `
             ${fishHTMLRepresentation}
     `
+
 }

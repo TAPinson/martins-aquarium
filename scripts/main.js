@@ -1,5 +1,5 @@
 // import useFish from a seperate js page. Location is relative to the location of this page.
-import { useFish } from './fish/FishDataProvider.js'
+import { useFish, makeMostHolyFish, makeSoldierFish, makeUnworthy } from './fish/FishDataProvider.js'
 import { FishList } from './fish/FishList.js';
 
 
@@ -22,3 +22,6 @@ import { tipList } from './tips/TipList.js';
 
 
 tipList();
+//makeMostHolyFish();
+//makeSoldierFish();
+//makeUnworthy();
