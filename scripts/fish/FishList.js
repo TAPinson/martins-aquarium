@@ -12,9 +12,7 @@ export const FishList = () => {
 
     const unworthy = makeUnworthy();
     addFishToDom(unworthy);
-    
 
-   
 }
 
 const addFishToDom = (whichFishArray) => {
@@ -24,7 +22,7 @@ const addFishToDom = (whichFishArray) => {
     for (const fish of whichFishArray) {
         fishHTMLRepresentation += Fish(fish);
     }
-
+    
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
             ${fishHTMLRepresentation}
